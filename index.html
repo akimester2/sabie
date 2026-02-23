@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sabie</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Sabie</h1>
+<p>Holiday Planner</p>
+</header>
+
+<div class="container">
+
+<div id="login">
+<input id="username" placeholder="Your name">
+<input id="team" placeholder="Team name">
+<button onclick="enter()">Enter Team</button>
+</div>
+
+<div id="planner" class="hidden">
+
+<div class="controls">
+<input type="date" id="start">
+<input type="date" id="end">
+
+<select id="status">
+<option value="holiday">On holiday</option>
+<option value="wfh">Working from home</option>
+<option value="planned">Planned holiday</option>
+</select>
+
+<button onclick="add()">Add</button>
+</div>
+
+<div class="nav">
+<button onclick="change(-1)">◀</button>
+<h2 id="month"></h2>
+<button onclick="change(1)">▶</button>
+</div>
+
+<div id="calendar" class="calendar"></div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
